@@ -17,14 +17,60 @@
     <script src="/js/materialstyle.bundle.js"></script>
   </head>
   <body data-bs-theme="dark" tabindex="0">
-    <main class="vw-100 vh-100 justify-content-center align-items-center d-flex">
-      <div class="container-fluid text-center">
-        <h2 class="fw-medium my-1 motto user-select-none">
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark py-0 border-none">
+      <div class="container-xxl">
+        <a class="navbar-brand fw-medium py-2" href="/">
           <span class="text-danger-emphasis">xtcy</span><span class="text-danger">.</span><span class="text-danger-emphasis">dev</span>
-        </h2>
-        <p class="m-0"><small class="text-secondary user-select-none">grlc</small></p>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-3 active position-relative" aria-current="page" href="/">Home
+                <span class="ripple-surface ripple-no-hover"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link position-relative p-3" href="/forum/home">Forum
+                <span class="ripple-surface ripple-no-hover"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="/auth/login" class="btn btn-primary my-1" type="button">Login
+                <span class="ripple-surface"></span>
+              </a>
+              <a href="/auth/register" class="btn btn-warning my-1" type="button">Register
+                <span class="ripple-surface"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </main>
+    </nav>
+    <div class="app container py-4">
+      <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="text-center mb-5">
+          <h2 class="fw-medium mb-1 motto user-select-none">
+            <span class="text-danger-emphasis">xtcy</span><span class="text-danger">.</span><span class="text-danger-emphasis">dev</span>
+          </h2>
+          <p class="m-0"><small class="text-secondary user-select-none">grlc</small></p>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-dark">
+      <div class="container-xxl py-5">
+        <p class="m-0 fw-medium">&copy; 2024
+          <span class="text-danger-emphasis">xtcy</span><span class="text-danger">.</span><span class="text-danger-emphasis">dev</span>
+          <span class="text-secondary">by grlc</span></p>
+      </div>
+    </footer>
     <script src="/js/app.js"></script>
   </body>
 </html>

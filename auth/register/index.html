@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xtcy development</title>
+    <link rel="shortcut icon" href="https://xtcy.dev/img/paars.png" type="image/x-icon">
+    <meta name="title" content="xtcy.dev">
+    <meta name="description" content="xtcy development by grlc">
+    <meta name="theme-color" content="#de263e">
+    <meta content="https://xtcy.dev/img/paars.png" property="og:image">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <link
+        href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@material/ripple@14.0.0/dist/mdc.ripple.min.js"
+        integrity="sha384-9QANVmWxL3S8VRs8x1Q+bF1Zzogpy7P/Qw1+y5qHLdC1ig0EuoHg9VbB1SXyecdZ"
+        crossorigin="anonymous"></script>
+    <script src="/js/materialstyle.bundle.js"></script>
+</head>
+
+<body data-bs-theme="dark" tabindex="0">
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark py-0 border-none">
+        <div class="container-xxl">
+            <a class="navbar-brand fw-medium py-2" href="/">
+                <span class="text-danger-emphasis">xtcy</span><span class="text-danger">.</span><span
+                    class="text-danger-emphasis">dev</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-3 position-relative" aria-current="page" href="/">Home
+                            <span class="ripple-surface ripple-no-hover"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative p-3" href="/forum/home">Forum
+                            <span class="ripple-surface ripple-no-hover"></span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="/auth/login" class="btn btn-primary my-1" type="button">Login
+                            <span class="ripple-surface"></span>
+                        </a>
+                        <a href="/auth/register" class="btn btn-warning my-1" type="button">Register
+                            <span class="ripple-surface"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="app container py-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card bg-dark bg-opacity-75">
+                    <div class="card-header py-3 px-4">Register</div>
+                    <div class="card-body p-4">
+                        <div class="alert rounded-1 alert-success text-center">We use Argon2ID to encrypt your information and keep you safe.</div>
+                        <form method="POST" action="/auth/login">
+                            <input type="hidden" name="_token" value="IiREjJ1Mgvj9Rd9j39BtP1PvjpVxuBsE2Jl6XkPR" />
+                            <div class="form-floating-with-icon mb-2">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Email"
+                                        autocomplete="off">
+                                    <label for="email">Username</label>
+                                </div>
+                                <span class="prepend">
+                                    <i class="fa-light fa-circle-user"></i>
+                                </span>
+                            </div>
+                            <div class="form-floating-with-icon mb-2">
+                                <div class="form-floating">
+                                    <input type="refkey" class="form-control" id="refkey" placeholder="Referral Key" autocomplete="off">
+                                    <label for="refkey">Referral Key</label>
+                                </div>
+                                <span class="prepend">
+                                    <i class="fa-light fa-key"></i>
+                                </span>
+                            </div>
+                            <div class="form-floating-with-icon mb-2">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="password" placeholder="Password"
+                                        autocomplete="off">
+                                    <label for="password">Password</label>
+                                </div>
+                                <span class="append">
+                                    <i class="fa-light fa-keyboard"></i>
+                                </span>
+                            </div>
+                            <div class="form-floating-with-icon mb-4">
+                                <div class="form-floating">
+                                    <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="off">
+                                    <label for="password">Confirm Password</label>
+                                </div>
+                                <span class="append">
+                                    <i class="fa-light fa-keyboard"></i>
+                                </span>
+                            </div>
+                            <div class="form-group row mb-0">
+                                <div class="col-md-8 mx-auto">
+                                    <button type="submit" class="btn btn-primary w-100 position-relative"><i class="fa-light fa-user-plus me-2"></i>Register
+                                        <span class="ripple-surface"></span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark">
+        <div class="container-xxl py-5">
+            <p class="m-0 fw-medium">&copy; 2024
+                <span class="text-danger-emphasis">xtcy</span><span class="text-danger">.</span><span
+                    class="text-danger-emphasis">dev</span>
+                <span class="text-secondary">by grlc</span>
+            </p>
+        </div>
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

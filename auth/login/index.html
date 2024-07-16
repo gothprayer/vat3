@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link p-3 active position-relative" aria-current="page" href="/">Home
+              <a class="nav-link p-3 position-relative" aria-current="page" href="/">Home
                 <span class="ripple-surface ripple-no-hover"></span>
               </a>
             </li>
@@ -55,14 +55,43 @@
       </div>
     </nav>
     <div class="app container py-4">
-      <div class="position-absolute top-50 start-50 translate-middle">
-        <div class="text-center mb-5">
-          <h2 class="fw-medium mb-1 motto user-select-none">
-            <span class="text-danger-emphasis">xtcy</span><span class="text-danger">.</span><span class="text-danger-emphasis">dev</span>
-          </h2>
-          <h5 class="m-0 fw-normal"><small class="text-secondary user-select-none">grlc</small></h5>
-        </div>
-      </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="card bg-dark bg-opacity-75">
+                <div class="card-header py-3 px-4">Login</div>
+                <div class="card-body p-4">
+                  <div class="alert rounded-1 alert-warning text-center">Please save your password somewhere safe, as we do not provide any password recovery services.</div>
+                  <form method="POST" action="/auth/login">
+                    <input type="hidden" name="_token" value="IiREjJ1Mgvj9Rd9j39BtP1PvjpVxuBsE2Jl6XkPR" />
+                    <div class="form-floating-with-icon mb-2">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email" placeholder="Email" autocomplete="off">
+                      <label for="email">Username</label>
+                    </div>
+                    <span class="prepend">
+                      <i class="fa-light fa-circle-user"></i>
+                    </span>
+                    </div>
+                    <div class="form-floating-with-icon mb-4">
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="off">
+                        <label for="password">Password</label>
+                      </div>
+                      <span class="append">
+                        <i class="fa-light fa-keyboard"></i>
+                      </span>
+                    </div>
+                    <div class="form-group row mb-0">
+                      <div class="col-md-8 mx-auto">
+                        <button type="submit" class="btn btn-primary w-100 position-relative"><i class="fas fa-sign-in-alt" aria-hidden="true"></i> Login
+                        <span class="ripple-surface"></span></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
     <footer class="bg-dark">
       <div class="container-xxl py-5">
